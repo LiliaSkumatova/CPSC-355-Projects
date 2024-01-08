@@ -1,0 +1,233 @@
+Script started on 2023-09-26 16:22:40-06:00 [TERM="xterm" TTY="/dev/pts/286" COLUMNS="206" LINES="58"]
+
+Disk quotas for user lilia.skumatova (uid 20805610): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.68.26:/CS    114M  10240M  10240M            2107    100k    100k        
+
+]0;lilia.skumatova@csa1:~/cpsc355/assignment1[?2004h[UC lilia.skumatova@csa1 assignment1] gdb assign1b.out
+[?2004l[35;1mGNU gdb (GDB) Fedora Linux 13.2-2.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign1b.out[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32massign1b.out[m)
+[?2004h(gdb) b*skip_update
+[?2004lBreakpoint 1 at [34m0x410214[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/csusers/lilia.skumatova/cpsc355/assignment1/assign1b.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+[?2004hMissing separate debuginfos, use: dnf debuginfo-install glibc-2.37-4.fc38.aarch64
+[?2004l[?2004h(gdb) display/i $pc
+[?2004l1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -10, y = 5840, min = 5840
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$1 = -2906
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -9, y = -2906, min = -2906
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$2 = -7678
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -8, y = -7678, min = -7678
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$3 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -7, y = -9496, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$4 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -6, y = -9260, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$5 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -5, y = -7750, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$6 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -4, y = -5626, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p #[K$x21
+[?2004l$7 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -3, y = -3428, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$8 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -2, y = -1576, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$9 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = -1, y = -370, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$10 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 0, y = 10, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$11 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 1, y = -496, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$12 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 2, y = -1828, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$13 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 3, y = -3806, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$14 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 4, y = -6130, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$15 = -9496
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 5, y = -8380, min = -9496
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$16 = -10016
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 6, y = -10016, min = -10016
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $c[Kx21
+[?2004l$17 = -10378
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 7, y = -10378, min = -10378
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$18 = -10378
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 8, y = -8686, min = -10378
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$19 = -10378
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 9, y = -4040, min = -10378
+
+Breakpoint 1, [34m0x0000000000410214[m in [33mskip_update[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mskip_update[m>:	[32mldr[m	[31mx0[m, [34m0x410240[m <[33mexit[m+8>
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004l$20 = -10378
+[?2004h(gdb) c
+[?2004lContinuing.
+x = 10, y = 4580, min = -10378
+[Inferior 1 (process 3491483) exited with code 037]
+[?2004h[?2004l[?2004h(gdb) p $x21
+[?2004lNo registers.
+[?2004h(gdb) exit
+[?2004l]0;lilia.skumatova@csa1:~/cpsc355/assignment1[?2004h[UC lilia.skumatova@csa1 assignment1] exit
+[?2004lexit
+
+Script done on 2023-09-26 16:27:37-06:00 [COMMAND_EXIT_CODE="0"]
