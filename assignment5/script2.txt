@@ -1,0 +1,24 @@
+Script started on 2023-11-22 02:50:09-07:00 [TERM="xterm" TTY="/dev/pts/87" COLUMNS="206" LINES="58"]
+
+Disk quotas for user lilia.skumatova (uid 20805610): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.68.26:/CS    115M  10240M  10240M            2156    100k    100k        
+
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] m4 a5b.asm>a5b.s
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] a5b.s -o a5b[K[K[K[K[K[K[K[K[K[K[K[Kgcc a5b.s -o a5b
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5b
+[?2004lusage: a5b mm dd
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5b 12 25
+[?2004lDecember 25th is Winter
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5b 4 12
+[?2004lApril 12th is Spring
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5b 6[K7 2
+[?2004lJuly 2nd is Summer
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./ab[K5b 13 3[K2
+[?2004lError: Invalid input
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5b 2 32
+[?2004lError: Invalid input
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] exit
+[?2004lexit
+
+Script done on 2023-11-22 02:52:04-07:00 [COMMAND_EXIT_CODE="0"]

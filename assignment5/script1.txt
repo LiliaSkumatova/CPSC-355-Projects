@@ -1,0 +1,179 @@
+Script started on 2023-11-22 02:46:51-07:00 [TERM="xterm" TTY="/dev/pts/87" COLUMNS="206" LINES="58"]
+
+Disk quotas for user lilia.skumatova (uid 20805610): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.68.26:/CS    115M  10240M  10240M            2151    100k    100k        
+
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] a5a.asm >a5a.s
+[?2004lbash: a5a.asm: command not found
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] m4 a5a.as,[Km>a5a.s
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] as a5a.s -o a5a.o
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] gcc -c a5aMain.c
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] gcc a5a.o a5aMain.o -o a5a
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] ./a5a
+[?2004l[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive interger value to be pushed: 6
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive interger value to be pushed: 12
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive interger value to be pushed: 2
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive interger value to be pushed: 5
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 1
+
+Enter the positive interger value to be pushed: 3
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 5
+
+Invalid option! Try again.
+
+Press the return key to continue . . .3
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Current stack contents:
+  3 <-- top of stack
+  5
+  2
+  12
+  6
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Popped value is 3
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Current stack contents:
+  5 <-- top of stack
+  2
+  12
+  6
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Popped value is 5
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Popped value is 2
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Current stack contents:
+  12 <-- top of stack
+  6
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Popped value is 12
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Current stack contents:
+  6 <-- top of stack
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Popped value is 6
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty Stack
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 2
+
+Stack underflow! Cannot pop an empty stack.
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 3
+
+Empty Stack
+
+Press the return key to continue . . .
+[H[2J[3J### Stack Operations ###
+
+Press 1 - Push, 2 - Pop, 3 - Display, 4 - Exit
+Your option? 4
+
+Terminating program
+]0;lilia.skumatova@csa2:~/cpsc355/assignment5[?2004h[UC lilia.skumatova@csa2 assignment5] exit
+[?2004lexit
+
+Script done on 2023-11-22 02:49:42-07:00 [COMMAND_EXIT_CODE="0"]
