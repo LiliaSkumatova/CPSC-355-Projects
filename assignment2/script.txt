@@ -1,0 +1,181 @@
+Script started on 2023-10-06 15:50:31-06:00 [TERM="xterm" TTY="/dev/pts/169" COLUMNS="206" LINES="58"]
+
+Disk quotas for user lilia.skumatova (uid 20805610): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.68.26:/CS    114M  10240M  10240M            2119    100k    100k        
+
+]0;lilia.skumatova@csa2:~/cpsc355/assignment2[?2004h[UC lilia.skumatova@csa2 assignment2] gdb assign2a.out
+[?2004l[35;1mGNU gdb (GDB) Fedora Linux 13.2-2.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign2a.out[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32massign2a.out[m)
+[?2004h(gdb) b main
+[?2004lBreakpoint 1 at [34m0x4101dc[m
+[?2004h(gdb) display/i $pc
+[?2004l1: x/i $pc
+[2m<error: [m[2mNo registers.[m[2m>[m
+[?2004h(gdb) r
+[?2004lStarting program: [32m/home/csusers/lilia.skumatova/cpsc355/assignment2/assign2a.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x00000000004101dc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101dc[m <[33mmain[m+8>:	[32mmov[m	[31mw21[m, [34m#0x7fc07fc             [m[37;2m	// #133957628[m
+[?2004hMissing separate debuginfos, use: dnf debuginfo-install glibc-2.37-10.fc38.aarch64
+[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101e0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101e0[m <[33mmain[m+12>:	[32mmov[m	[31mw23[m, [34m#0x55555555            [m[37;2m	// #1431655765[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101e4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101e4[m <[33mmain[m+16>:	[32mand[m	[31mw23[m, [31mw21[m, [31mw23[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101e8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101e8[m <[33mmain[m+20>:	[32mlsl[m	[31mw23[m, [31mw23[m, [34m#1[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101ec[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101ec[m <[33mmain[m+24>:	[32mlsr[m	[31mw24[m, [31mw21[m, [34m#1[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101f0[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f0[m <[33mmain[m+28>:	[32mand[m	[31mw24[m, [31mw24[m, [34m#0x55555555[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101f4[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f4[m <[33mmain[m+32>:	[32morr[m	[31mw22[m, [31mw23[m, [31mw24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101f8[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101f8[m <[33mmain[m+36>:	[32mand[m	[31mw23[m, [31mw22[m, [34m#0x33333333[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x00000000004101fc[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x4101fc[m <[33mmain[m+40>:	[32mlsl[m	[31mw23[m, [31mw23[m, [34m#2[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410200[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410200[m <[33mmain[m+44>:	[32mlsr[m	[31mw24[m, [31mw22[m, [34m#2[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410204[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410204[m <[33mmain[m+48>:	[32mand[m	[31mw24[m, [31mw24[m, [34m#0x33333333[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410208[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410208[m <[33mmain[m+52>:	[32morr[m	[31mw22[m, [31mw23[m, [31mw24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000041020c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x41020c[m <[33mmain[m+56>:	[32mand[m	[31mw23[m, [31mw22[m, [34m#0xf0f0f0f[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410210[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410210[m <[33mmain[m+60>:	[32mlsl[m	[31mw23[m, [31mw23[m, [34m#4[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410214[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410214[m <[33mmain[m+64>:	[32mlsr[m	[31mw24[m, [31mw22[m, [34m#4[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410218[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410218[m <[33mmain[m+68>:	[32mand[m	[31mw24[m, [31mw24[m, [34m#0xf0f0f0f[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000041021c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x41021c[m <[33mmain[m+72>:	[32morr[m	[31mw22[m, [31mw23[m, [31mw24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410220[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410220[m <[33mmain[m+76>:	[32mlsl[m	[31mw23[m, [31mw22[m, [34m#24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410224[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410224[m <[33mmain[m+80>:	[32mand[m	[31mw24[m, [31mw22[m, [34m#0xff00[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410228[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410228[m <[33mmain[m+84>:	[32mlsl[m	[31mw24[m, [31mw24[m, [34m#8[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000041022c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x41022c[m <[33mmain[m+88>:	[32mlsr[m	[31mw25[m, [31mw22[m, [34m#8[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410230[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410230[m <[33mmain[m+92>:	[32mand[m	[31mw25[m, [31mw25[m, [34m#0xff00[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410234[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410234[m <[33mmain[m+96>:	[32mlsr[m	[31mw26[m, [31mw22[m, [34m#24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410238[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410238[m <[33mmain[m+100>:	[32morr[m	[31mw22[m, [31mw23[m, [31mw24[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000041023c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x41023c[m <[33mmain[m+104>:	[32morr[m	[31mw22[m, [31mw22[m, [31mw25[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410240[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410240[m <[33mmain[m+108>:	[32morr[m	[31mw22[m, [31mw22[m, [31mw26[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410244[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410244[m <[33mmain[m+112>:	[32mldr[m	[31mw0[m, [34m0x41025c[m <[33mmain[m+136>
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x0000000000410248[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410248[m <[33mmain[m+116>:	[32mmov[m	[31mw1[m, [31mw21[m
+[?2004h[?2004l[?2004h(gdb) ni
+[?2004l[34m0x000000000041024c[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x41024c[m <[33mmain[m+120>:	[32mmov[m	[31mw2[m, [31mw22[m
+[?2004h[?2004l[?2004h(gdb) p $w21
+[?2004l$1 = 133957628
+[?2004h(gdb) p/x
+[?2004l$2 = 0x7fc07fc
+[?2004h(gdb) p/t
+[?2004l$3 = 111111111000000011111111100
+[?2004h(gdb) p $w22
+[?2004l$4 = 1071661024
+[?2004h(gdb) p/x
+[?2004l$5 = 0x3fe03fe0
+[?2004h(gdb) [/[K[Kp/t
+[?2004l$6 = 111111111000000011111111100000
+[?2004h(gdb) ni
+[?2004l[34m0x0000000000410250[m in [33mmain[m ()
+1: x/i $pc
+=> [34m0x410250[m <[33mmain[m+124>:	[32mbl[m	[34m0x410070[m <[33mprintf@plt[m>
+[?2004h[?2004l[?2004h(gdb) c
+[?2004lContinuing.
+original: 0w2107FC07FC    reversed: 0w213FE03FE0
+[Inferior 1 (process 4083920) exited with code 061]
+[?2004h[?2004l[?2004h(gdb) q
+[?2004l]0;lilia.skumatova@csa2:~/cpsc355/assignment2[?2004h[UC lilia.skumatova@csa2 assignment2] exit
+[?2004lexit
+
+Script done on 2023-10-06 15:53:48-06:00 [COMMAND_EXIT_CODE="0"]
