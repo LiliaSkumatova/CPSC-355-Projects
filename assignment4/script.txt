@@ -1,0 +1,260 @@
+Script started on 2023-11-01 23:17:20-06:00 [TERM="xterm" TTY="/dev/pts/26" COLUMNS="206" LINES="58"]
+
+Disk quotas for user lilia.skumatova (uid 20805610): 
+     Filesystem   space   quota   limit   grace   files   quota   limit   grace
+10.44.68.26:/CS    115M  10240M  10240M            2146    100k    100k        
+
+]0;lilia.skumatova@csa1:~/cpsc355/assignment4[?2004h[UC lilia.skumatova@csa1 assignment4] gdb assign4.out
+[?2004l[35;1mGNU gdb (GDB) Fedora Linux 13.2-2.fc38[m
+Copyright (C) 2023 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <[32mhttp://gnu.org/licenses/gpl.html[m>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+[32m<https://www.gnu.org/software/gdb/bugs/>[m.
+Find the GDB manual and other documentation resources online at:
+    <[32mhttp://www.gnu.org/software/gdb/documentation/[m>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from [32massign4.out[m...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <[32mhttps://debuginfod.fedoraproject.org/[m>
+[?2004hEnable debuginfod for this session? (y or [n]) m
+[?2004lPlease answer y or [n].
+[?2004hEnable debuginfod for this session? (y or [n]) n
+[?2004lDebuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+(No debugging symbols found in [32massign4.out[m)
+[?2004h(gdb) b main
+[?2004lBreakpoint 1 at [34m0x410254[m
+[?2004h(gdb) b gdb1
+[?2004lBreakpoint 2 at [34m0x410274[m
+[?2004h(gdb) b gdb3[K2
+[?2004lBreakpoint 3 at [34m0x410278[m
+[?2004h(gdb) b gdb3
+[?2004lBreakpoint 4 at [34m0x4102c4[m
+[?2004h(gdb) 5[Kr
+[?2004lStarting program: [32m/home/csusers/lilia.skumatova/cpsc355/assignment4/assign4.out[m 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "[32m/lib64/libthread_db.so.1[m".
+
+Breakpoint 1, [34m0x0000000000410254[m in [33mmain[m ()
+[?2004hMissing separate debuginfos, use: dnf debuginfo-install glibc-2.37-10.fc38.aarch64
+[?2004l[?2004h(gdb) display[K[K[K[K[K[K[Ki r
+[?2004lx0             0x1                 1
+x1             0xfffffffff278      281474976707192
+x2             0xfffffffff288      281474976707208
+x3             0x4100b4            4260020
+x4             0xfffff7ff7f20      281474842459936
+x5             0x9253e3659fadf809  -7902722895494907895
+x6             0xfffff7fa2088      281474842108040
+x7             0x4554415649        297766311497
+x8             0xfffffffff0e8      281474976706792
+x9             0x8                 8
+x10            0x0                 0
+x11            0x0                 0
+x12            0x2e                46
+x13            0x3d8f538           64550200
+x14            0xfffff7fff000      281474842488832
+x15            0x3                 3
+x16            0xfffff7fa0088      281474842099848
+x17            0xfffff7fd0b10      281474842299152
+x18            0x6474e552          1685382482
+x19            0xfffffffff278      281474976707192
+x20            0x1                 1
+x21            0x43fdf0            4455920
+x22            0x4100b4            4260020
+x23            0xfffffffff288      281474976707208
+x24            0xfffff7ffdb48      281474842483528
+x25            0x0                 0
+x26            0xfffff7ffe000      281474842484736
+x27            0x43fdf0            4455920
+x28            0x0                 0
+x29            0xfffffffff0c0      281474976706752
+x30            0xfffff7e10598      281474840462744
+sp             0xfffffffff0c0      0xfffffffff0c0
+pc             0x410254            0x410254 <main+12>
+cpsr           0x60001000          [ EL=0 BTYPE=0 SSBS C Z ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0xfffff7ff8520      0xfffff7ff8520
+tpidr2         0x0                 0x0
+[?2004h(gdb) s
+[?2004lSingle stepping until exit from function main,
+which has no line number information.
+
+Breakpoint 2, [34m0x0000000000410274[m in [33mgdb1[m ()
+[?2004h[?2004l[?2004h(gdb) i r
+[?2004lx0             0x1                 1
+x1             0xfffffffff278      281474976707192
+x2             0xf                 15
+x3             0xf                 15
+x4             0x12                18
+x5             0x9253e3659fadf809  -7902722895494907895
+x6             0x3                 3
+x7             0x4554415649        297766311497
+x8             0xfffffffff100      281474976706816
+x9             0x8                 8
+x10            0x0                 0
+x11            0x0                 0
+x12            0x2e                46
+x13            0x3d8f538           64550200
+x14            0xfffff7fff000      281474842488832
+x15            0x3                 3
+x16            0xfffff7fa0088      281474842099848
+x17            0xfffff7fd0b10      281474842299152
+x18            0x6474e552          1685382482
+x19            0x12c               300
+x20            0x1                 1
+x21            0xa                 10
+x22            0x9                 9
+x23            0xfffffffff288      281474976707208
+x24            0xfffff7ffdb48      281474842483528
+x25            0x0                 0
+x26            0xfffff7ffe000      281474842484736
+x27            0xfffffffff0e8      281474976706792
+x28            0x0                 0
+x29            0xfffffffff0c0      281474976706752
+x30            0x410264            4260452
+sp             0xfffffffff0c0      0xfffffffff0c0
+pc             0x410274            0x410274 <gdb1+16>
+cpsr           0x60001000          [ EL=0 BTYPE=0 SSBS C Z ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0xfffff7ff8520      0xfffff7ff8520
+tpidr2         0x0                 0x0
+[?2004h(gdb) d[Kprint x2
+[?2004lNo symbol "x2" in current context.
+[?2004h(gdb) p x2
+[?2004lNo symbol "x2" in current context.
+[?2004h(gdb) c
+[?2004lContinuing.
+
+Breakpoint 3, [34m0x0000000000410278[m in [33mgdb2[m ()
+[?2004h[?2004l[?2004h(gdb) display
+[?2004l[?2004h(gdb) i r
+[?2004lx0             0x1                 1
+x1             0xfffffffff278      281474976707192
+x2             0xf                 15
+x3             0xf                 15
+x4             0x12                18
+x5             0x9253e3659fadf809  -7902722895494907895
+x6             0x3                 3
+x7             0x4554415649        297766311497
+x8             0xfffffffff100      281474976706816
+x9             0x8                 8
+x10            0x0                 0
+x11            0x0                 0
+x12            0x2e                46
+x13            0x3d8f538           64550200
+x14            0xfffff7fff000      281474842488832
+x15            0x3                 3
+x16            0xfffff7fa0088      281474842099848
+x17            0xfffff7fd0b10      281474842299152
+x18            0x6474e552          1685382482
+x19            0x546               1350
+x20            0x1                 1
+x21            0xf                 15
+x22            0x12                18
+x23            0xfffffffff288      281474976707208
+x24            0xfffff7ffdb48      281474842483528
+x25            0x0                 0
+x26            0xfffff7ffe000      281474842484736
+x27            0xfffffffff100      281474976706816
+x28            0x0                 0
+x29            0xfffffffff0c0      281474976706752
+x30            0x410278            4260472
+sp             0xfffffffff0c0      0xfffffffff0c0
+pc             0x410278            0x410278 <gdb2>
+cpsr           0x60001000          [ EL=0 BTYPE=0 SSBS C Z ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0xfffff7ff8520      0xfffff7ff8520
+tpidr2         0x0                 0x0
+[?2004h(gdb) c
+[?2004lContinuing.
+Initial pyramid values:
+Pyramid khefre 
+	Center = (0, 0)
+	Base width = 10  Base length = 10
+	Height = 9
+	Volume = 300
+
+Pyramid cheops 
+	Center = (0, 0)
+	Base width = 15  Base length = 15
+	Height = 18
+	Volume = 1350
+
+
+Breakpoint 4, [34m0x00000000004102c4[m in [33mgdb3[m ()
+[?2004h[?2004l[?2004h(gdb) i r
+[?2004lx0             0xfffffffff0e8      281474976706792
+x1             0x1b                27
+x2             0x0                 0
+x3             0x0                 0
+x4             0xffffffffeef8      281474976706296
+x5             0x4412b0            4461232
+x6             0x3                 3
+x7             0x4                 4
+x8             0xfffffffff100      281474976706816
+x9             0x0                 0
+x10            0xa                 10
+x11            0xf                 15
+x12            0xffffffc8          4294967240
+x13            0xfffffffff050      281474976706640
+x14            0x1                 1
+x15            0x3                 3
+x16            0x440018            4456472
+x17            0xfffff7e37e70      281474840624752
+x18            0x6474e552          1685382482
+x19            0x546               1350
+x20            0x1                 1
+x21            0xf                 15
+x22            0x12                18
+x23            0xfffffffff288      281474976707208
+x24            0xa2                162
+x25            0xf0456             984150
+x26            0xfffff7ffe000      281474842484736
+x27            0xfffffffff100      281474976706816
+x28            0x4100b4            4260020
+x29            0xfffffffff0c0      281474976706752
+x30            0x4102bc            4260540
+sp             0xfffffffff0c0      0xfffffffff0c0
+pc             0x4102c4            0x4102c4 <gdb3+8>
+cpsr           0x20001000          [ EL=0 BTYPE=0 SSBS C ]
+fpsr           0x0                 [ ]
+fpcr           0x0                 [ Len=0 Stride=0 RMode=0 ]
+tpidr          0xfffff7ff8520      0xfffff7ff8520
+tpidr2         0x0                 0x0
+[?2004h(gdb) c
+[?2004lContinuing.
+
+New pyramid values:
+Pyramid khefre 
+	Center = (-23, 17)
+	Base width = 10  Base length = 10
+	Height = 9
+	Volume = 300
+
+Pyramid cheops 
+	Center = (27, -10)
+	Base width = 135  Base length = 135
+	Height = 162
+	Volume = 984150
+
+[Inferior 1 (process 1136168) exited normally]
+[?2004h[?2004l[?2004h(gdb) i r
+[?2004lThe program has no registers now.
+[?2004h(gdb) c
+[?2004lThe program is not being run.
+[?2004h(gdb) exit
+[?2004l]0;lilia.skumatova@csa1:~/cpsc355/assignment4[?2004h[UC lilia.skumatova@csa1 assignment4] exit
+[?2004lexit
+
+Script done on 2023-11-01 23:20:15-06:00 [COMMAND_EXIT_CODE="0"]
